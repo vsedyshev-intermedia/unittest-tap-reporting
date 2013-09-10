@@ -1,9 +1,41 @@
-unittest-tap-reporting
-======================
+# unittest-tap-reporting
 
-Python unittest TAP Reporting generator
+unittest-tap-reporting is a unittest test runner that can save test results
+to TAP stream that can be consumed by a wide range of tools, such as build
+systems, IDEs and continuous integration servers.
 
-Example:
+## Requirements
+
+* Python 2.7
+
+## Installation
+
+The easiest way to install unittest-tap-reporting is via
+[EasyInstall](http://peak.telecommunity.com/DevCenter/EasyInstall). Follow
+[these instructions](http://pypi.python.org/pypi/setuptools) to install
+EasyInstall if you don't have it already.
+
+Then, execute the following command line to install the latest stable version
+of unittest-tap-reporting:
+
+````bash
+$ sudo easy_install unittest-tap-reporting
+````
+
+If you use Git and want to get the latest *development* version:
+
+````bash
+$ git clone git://github.com/vit1251/unittest-tap-reporting.git
+$ cd unittest-tap-reporting
+$ sudo python setup.py install
+````
+
+## Usage
+
+The script below, adapted from the
+[unittest](http://docs.python.org/library/unittest.html), shows how to use
+`TAPTestRunner` in a very simple way. In fact, the only difference between
+this script and the original one is the last line:
 
 ```python
 import random
