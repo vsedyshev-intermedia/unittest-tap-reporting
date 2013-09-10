@@ -1,7 +1,6 @@
 import sys
 import time
-
-import unittest.result
+import unittest
 
 
 class TAPTestResult(unittest.result.TestResult):
