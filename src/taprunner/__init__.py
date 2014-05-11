@@ -55,7 +55,8 @@ class TAPTestRunner(object):
     """
     resultclass = TAPTestResult
 
-    def __init__(self, stream=sys.stderr, descriptions=True, plan=None, failfast=False, buffer=False, resultclass=None):
+    def __init__(self, stream=sys.stdout, descriptions=True, plan=None,
+                 failfast=False, buffer=False, resultclass=None):
         self.stream = stream
         self.descriptions = descriptions
         self.plan = plan
